@@ -85,7 +85,8 @@ def patch_ota(
         '--key-avb', key_avb.key,
         '--key-ota', key_ota.key,
         '--cert-ota', cert_ota,
-        '--rootless',
+        '--magisk', 'magisk.apk',
+        '--magisk-preinit-device', 'sda10'
     ]
 
     if key_avb.pass_env is not None:
